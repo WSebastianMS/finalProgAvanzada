@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Calcular descuentos</h1>
+        <hr>
+        <p>Esta pagina web permite calcular los descuentos sobre una serie de productos dados.</p>
+        <table border="1px">
+            <tr>
+                <thead>
+                    <th>Categoria</th>
+                    <th>Entre 1 a 10 unidades</th>
+                    <th>Entre 11 a 20 unidades</th>
+                    <th>Mas de 20 unidades</th>
+                </thead>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Descuento del 1%</td>
+                <td>Descuento del 1.5%</td>
+                <td>Descuento del 2%</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Descuento del 1.2%</td>
+                <td>Descuento del 2%</td>
+                <td>Descuento del 3%</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Descuento del 0%</td>
+                <td>Descuento del 0.5%</td>
+                <td>Descuento del 1%</td>
+            </tr>
+        </table>
+    </section>
+<hr>
+    <section id="formContainer">
+        <form action="" id="discountForm">
+            <h1>Calcule su descuento</h1>
+            <label for="productName">Nombre del producto:</label>
+            <input type="text" id="productName">
+            <br>
+            <label for="productCategory">Categoria del producto:</label>
+            <input type="text" id="productCategory">
+            <br>
+            <label for="costPerUnit">Costo unitario:</label>
+            <input type="number" id="costPerUnit">
+            <br>
+            <label for="units">Cantidad:</label>
+            <input type="text" id="units">
+            <br>
+            <button onclick="calcular()">Calcular descuento</button>
+        </form>
+    </section>
+    <label for="" id="discount"></label>
+    <script src="js/script.js"></script>
+</body>
+</html>
